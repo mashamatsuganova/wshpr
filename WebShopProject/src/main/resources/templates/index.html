@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8"/>
+
+    <title>Application</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <style>
+      .my-carousel {
+          padding: 0;
+      }
+
+      .my-carousel .carousel-item {
+          display: flex;
+          max-height: 500px;
+      }
+
+      .my-carousel .carousel-item img {
+          object-fit: cover;
+      }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div th:replace="~{navigation :: navigation(Каталог)}"></div>
+<!--    <h1>Application</h1>-->
+
+</div>
+<!-- CAROUSEL -->
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://gagaru.club/uploads/posts/2023-02/1676027605_gagaru-club-p-glinyanaya-posuda-krasivaya-instagram-36.jpg" width=900 height="650" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://cs5.livemaster.ru/storage/60/bc/101b658e58a7b69ff50215c834or--posuda-miska-tarelka-blyudo-ploshka.jpg"  width=900 height="650" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://cs5.livemaster.ru/storage/bd/6c/538629e3aae500e759b0a2a1f5iy--posuda-led-i-plamya-serviz-keramicheskij-posuda-ruchnoj-rabot.jpg"  width=900 height="650"   class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- CAROUSEL -->
+<!--текст-->
+<section class="main-conteSnt">
+    <h1 align="center">Посуда - это то, с чем мы встречаемся каждый день. Не так ли?</h1>
+<!--    <p align="right"><strong>Метод перебора</strong></p>-->
+    <p>Мы работаем в разных техниках - на гончарном круге, отливка, лепка. Изделия сделаны из экологически чистой белой или красной глины, фарфора. Используемые для декорирования посуды глазури и цветные глины не содержат свинца и других опасных веществ. В создании наших изделий использован исключительно ручной труд! По этой причине каждое изделие уникально. Новая работа будет отличаться от предыдущей хотя бы неровностью, оставленной кистью после нанесения глазури.
+        Интерес наших постоянных клиентов мы стараемся поддерживать путем постепенного расширения ассортимента и высоким качеством продукции</p>
+    <p align="right"><strong>Основатели бренда "Lama" - Даша и Наташа </strong></p>
+
+</section>
+<!--текст-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
